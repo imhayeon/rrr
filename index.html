@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" href="IP_Kitteh.ico">
+	<title>고양이에게 해로운 식물은?</title>
+	<style type="text/css">
+
+		@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+	    body{background-color: white; font-family: 'BBTreeGB'; background-image:url("22.jpg"); background-repeat: no-repeat center center fixed; 
+ 			 -webkit-background-size: cover;
+ 			 -moz-background-size: cover;
+ 			 -o-background-size: cover;
+ 			 background-size: cover;}
+	    #b{position: absolute; left: 58%; top: 85%;}
+		#c{position: absolute; left: 0%; top: 33%;}
+		#j{position: absolute; left: 5%; top: 78%;}
+		#p{position: absolute; left: 25%; top: 32%;}
+		#bb{position: absolute; left: 40%; top: 65%;}
+		#dd{position: absolute; left: 60%; top: 30%;}
+		#kk{position: absolute; left: 80%; top: 55%;}
+			{width: auto; height: 1000px;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			  position: relative;}
+		input{ background-color: white;
+				border: none;
+				padding: 10px;
+				color: gray;
+				font-size: 20px;
+				margin-top: 10px;
+				border-radius: 5px;
+				box-shadow: 3px 3px 3px gray;
+				text-align: center; 
+				font-family: 'BBTreeGB'}
+	</style>
+</head>
+
+<body>
+	<div class="boxx">
+	<p style="text-align: center; background-color: #ffffff; background-color: rgba( 255, 255, 255, 0.8 ); border:0px solid; padding:8px; margin:20px; margin-left: 360px; margin-right: 360px; border-radius: 25px; " >
+		
+		<span style="color: brown; font-size: 1.8em; opacity: 1;">
+			고양이
+			<span style="color: green; font-size: 1em; opacity: 1;">
+			가 먹어도 되는 식물을 골라주세요!
+			<br><br>
+			<span style="color: black; font-size: 0.7em; opacity: 1;">
+			나무들 중 숨어있는 식물에 마우스를 갖다 대면 식물의 이름이 나옵니다.
+			<br>
+			고양이에게 해로운 식물을 누르면 고양이가 눈물을 흘려요 ㅠㅠ
+			</span>
+			</span>
+			</span>
+
+	</p>
+</div>
+
+	<img style="cursor: pointer" src="로즈마리2.png" class="thum" id="b" height="200" title="로즈마리">
+	<audio src="고양이1.mp3" loop id="bs"></audio>
+
+	<img style="cursor: pointer" src="백합png.png" class="thum" id="c" height="200" title="백합">
+	<audio src="고양이2.wav" loop id="cs"></audio>
+
+	<img style="cursor: pointer" src="차이니즈에버그린png.png" class="thum" id="j" height="200" title="차이니즈에버그린">
+	<audio src="고양이2.wav" loop id="js"></audio>
+
+	<img style="cursor: pointer" src="알로에2.png" class="thum" id="p" height="200" title="알로에">
+	<audio src="고양이2.wav" loop id="ps"></audio>
+
+	<img style="cursor: pointer" src="파슬리22.png" class="thum" id="bb" height="200" title="파슬리">
+	<audio src="고양이1.mp3" loop id="bbs"></audio>
+
+	<img style="cursor: pointer" src="수국2.png" class="thum" id="dd" height="200" title="수국">
+	<audio src="고양이2.wav" loop id="dds"></audio>
+
+	<img style="cursor: pointer" src="산세베리아22.png" class="thum" id="kk" height="200" title="산세베리아">
+	<audio src="고양이2.wav" loop id="kks"></audio>
+
+
+
+	<script type="text/javascript">
+
+
+
+		var bstate = "off";
+		b.onclick = function(){
+			if(bstate == "off"){
+				b.style.opacity = "0.5";
+				document.body.style.background = "url(고양이1.png)";
+				document.body.style.backgroundSize = "cover";
+				bs.play();
+				bstate = "on";
+
+				
+			}else{
+				bs.pause();
+				bstate = "off";	
+				b.style.opacity = "1";
+				
+				document.body.style.background = "url(22.jpg)";
+			}
+		}
+	var cstate = "off";
+		c.onclick = function(){
+			if(cstate == "off"){
+				c.style.opacity = "0.5";
+				document.body.style.background = "url(고양이2.png)";
+				document.body.style.backgroundSize = "cover";
+				cs.play();
+				cstate = "on";
+				
+			}else{
+				cs.pause();
+				cstate = "off";
+				
+				c.style.opacity = "1";
+				document.body.style.background = "url(22.jpg)";	
+			}
+		}
+	var jstate = "off";
+		j.onclick = function(){
+			if(jstate == "off"){
+				j.style.opacity = "0.5";
+				document.body.style.background = "url(고양이2.png)";
+				document.body.style.backgroundSize = "cover";
+				js.play();
+				jstate = "on";
+				
+			}else{
+				js.pause();
+				jstate = "off";	
+				
+				j.style.opacity = "1";
+				document.body.style.background = "url(22.jpg)";
+			}
+		}
+		var pstate = "off";
+		p.onclick = function(){
+			if(pstate == "off"){
+				p.style.opacity = "0.5";
+				document.body.style.background = "url(고양이2.png)";
+				document.body.style.backgroundSize = "cover";
+				ps.play();
+				pstate = "on";
+				
+			}else{
+				ps.pause();
+				pstate = "off";
+				
+				p.style.opacity = "1";
+				document.body.style.background = "url(22.jpg)";
+			}
+		}
+		var bbstate = "off";
+		bb.onclick = function(){
+			if(bbstate == "off"){
+				bb.style.opacity = "0.5";
+				document.body.style.background = "url(고양이1.png)";
+				document.body.style.backgroundSize = "cover";
+				bbs.play();
+				bbstate = "on";
+				
+			}else{
+				bbs.pause();
+				bbstate = "off";
+				
+				bb.style.opacity = "1";
+				document.body.style.background = "url(22.jpg)";
+			}
+		}
+		var ddstate = "off";
+		dd.onclick = function(){
+			if(ddstate == "off"){
+				dd.style.opacity = "0.5";
+				document.body.style.background = "url(고양이2.png)";
+				document.body.style.backgroundSize = "cover";
+				dds.play();
+				ddstate = "on";
+				
+			}else{
+				dds.pause();
+				ddstate = "off";
+				
+				dd.style.opacity = "1";
+				document.body.style.background = "url(22.jpg)";
+			}
+		}
+		var kkstate = "off";
+		kk.onclick = function(){
+			if(kkstate == "off"){
+				kk.style.opacity = "0.5";
+				document.body.style.background = "url(고양이2.png)";
+				document.body.style.backgroundSize = "cover";
+				kks.play();
+				kkstate = "on";
+				
+			}else{
+				kks.pause();
+				kkstate = "off";
+				
+				kk.style.opacity = "1";
+				document.body.style.background = "url(22.jpg)";
+					
+			}
+		}
+
+
+	</script>
+
+</body>
+</html>
